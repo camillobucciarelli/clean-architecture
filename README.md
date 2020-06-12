@@ -1,10 +1,10 @@
 # flutterexercise
 
-create a data and domain layer for retrieve beach data, list and detail, with the following REST API:
+create a data and domain layer for retrieve posts data, list and detail, with the following REST API:
 
-base url => https://us-central1-c19beaches.cloudfunctions.net
-list => /beach
-detail => /beach/{beachId}
+base url => https://jsonplaceholder.typicode.com
+list => /posts
+detail => /posts/{postId}
 
 requirements:
 1. use clean architecture;
