@@ -15,11 +15,12 @@ abstract class PostDataSource {
 abstract class HttpPostDataSourceImpl implements PostDataSource {
 
   static const base_url = 'https://jsonplaceholder.typicode.com';
-  static const list = '/posts';
+  static const posts = '/posts';
 
   factory HttpPostDataSourceImpl([Dio dio]) =>
       _HttpPostDataSourceImpl(dio ?? DioFactory().getDioInstance(), baseUrl: base_url);
 
   @override
+  @GET(posts)
   Future<ResponseWrapper<Post>> getPosts();
 }

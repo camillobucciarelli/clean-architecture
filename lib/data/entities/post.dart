@@ -8,7 +8,6 @@ part 'post.g.dart';
 @JsonSerializable()
 class Post extends Serializable{
 
-
   int userId;
   int id;
   String title;
